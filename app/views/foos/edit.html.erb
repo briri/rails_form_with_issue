@@ -1,0 +1,4 @@
+<h1>Edit a Foo</h1>
+<%= form_with model: @foo, url: foo_path(@foo), method: :put do |f| %>
+  <%= render partial: '/foos/form', locals: { form: f } %>
+<% end %>

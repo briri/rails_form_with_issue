@@ -1,0 +1,13 @@
+<h1>Rails Tester</h1>
+
+<h2>Foos</h2>
+
+<%= link_to 'Add a new Foo', new_foo_path %>
+<br><br>
+<% if @foos.any? %>
+  <% @foos.each do |foo| %>
+    <%= link_to foo.title, edit_foo_path(foo) %>
+  <% end %>
+<% else %>
+  No Foos defined. Click the link above to add one.
+<% end %>

@@ -1,0 +1,4 @@
+<h1>Add a Foo</h1>
+<%= form_with model: @foo do |f| %>
+  <%= render partial: '/foos/form', locals: { form: f } %>
+<% end %>
